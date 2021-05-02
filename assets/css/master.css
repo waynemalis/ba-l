@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Letter';
+  src: url(../fonts/RetroSignature.otf);
+}
+body {
+  height: 100vh;
+  background: #000;
+}
+.head {
+  height: 100%;
+}
+.envelope {
+  width: 100%;
+  vertical-align: middle;
+  transform: translateY(0px);
+  animation: float 3s ease-in-out infinite;
+}
+.letter {
+  vertical-align: middle;
+  margin-top: 10%;
+  padding: 20%;
+  background: #fff;
+  color: #6f6657;
+  font-family: '';
+  font-size: 2.5em;
+  border-radius: 8px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
